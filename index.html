@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Puzzle</title>
+
+    <script src="../js/app.js" type="module"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <div id="menu">
+        <button id="play-btn" class="menu-btn">Play</button>
+        <select id="menu-select" class="menu-btn"></select>
+        <div id="karuzela">
+            <button id="left-arrow-btn" class="arrow-btn">
+                <img src="./assets/arrow-left-solid.svg" alt="left arrow">
+            </button>
+            <div id="image-container"></div>
+            <button id="right-arrow-btn" class="arrow-btn">
+                <img src="./assets/arrow-right-solid.svg" alt="right arrow">
+            </button>
+        </div>
+    </div>
+    <div id="board"></div>
+    <div id="popUpWindow">
+        <p>Wygrana! Aby zagrać ponownie zamknij ten komunikat i naciśnij przycisk 'Play'</p>
+        <button id="popUpWindow-btn">Close</button>
+    </div>
+</body>
+</html>

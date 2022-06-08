@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#board {
+  margin: 10px;
+  width: 40vw;
+  height: 40vw;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell {
+  background-repeat: no-repeat;
+  outline: 1px solid black;
+}
+#menu {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn {
+  width: 10vw;
+  min-width: 40px;
+  padding: 6px;
+  margin: 4px;
+}
+#karuzela {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+  height: 10vw;
+}
+.arrow-btn {
+  width: 5vw;
+  min-width: 40px;
+  height: 5vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image {
+  width: 6vw;
+  height: 6vw;
+  margin: 8px;
+  background-size: contain;
+}
+.image:nth-child(2) {
+  width: 8vw;
+  height: 8vw;
+  margin: 8px;
+}
+#popUpWindow {
+  position: fixed;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+}
+#popUpWindow-btn {
+  width: 5vw;
+  min-width: 50px;
+  margin-left: calc(50% - 5vw/2);
+}
